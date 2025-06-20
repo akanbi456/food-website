@@ -36,7 +36,7 @@ function Carousel() {
       <img
         src={ImageData[carousel].Image}
         alt={`Slide ${carousel}`}
-        className="object-cover w-full h-full mt-10 rounded-full animate-slide-in-right md:w-auto md:mt-0"
+        className="object-cover w-full h-full rounded-full p-2mt-10 animate-slide-in-right md:w-auto md:mt-0"
       />
     </div>
   );

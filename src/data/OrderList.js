@@ -41,7 +41,7 @@ export const OrderList = [
     id: 3,
     Image: img3,
     title: "spaghetti",
-    price: "$1.6",
+    price: 1.6,
     shortDescription:          "Classic spaghetti tossed in a rich tomato sauce, seasoned with herbs and spices. A comforting and delicious meal loved by all ages.",
 
     description:
@@ -69,7 +69,7 @@ export const OrderList = [
     title: "jollof rice",
       shortDescription: "West African rice dish cooked in spicy tomato sauce.",
 
-    price: "$1.8",
+    price: 1.8,
     description:
           "A beloved West African dish made with long-grain rice simmered in a flavorful blend of tomatoes, peppers, onions, and spices. Jollof Rice is rich, aromatic, and often served with fried plantains, chicken, or beef. A vibrant and satisfying meal full of bold, spicy flavor.",
 
@@ -81,7 +81,7 @@ export const OrderList = [
       shortDescription: "Traditional Nigerian rice served with spicy pepper sauce.",
 
     title: "ofada rice",
-    price: "$1.9",
+    price: 1.9,
     description:
         "Ofada Rice is a native Nigerian delicacy made from locally grown unpolished rice, known for its unique aroma and slightly nutty flavor. Typically served with a rich, spicy pepper sauce (Ayamase) made with assorted meats and palm oil. A hearty, flavorful dish that’s deeply rooted in Nigerian culinary tradition.",
 
@@ -104,9 +104,10 @@ export const OrderList = [
 
     Image: img8,
     title: "white rice and stew",
+    price: 1.5,
       shortDescription: "Steamed white rice served with rich, spicy tomato stew.",
 
-    price: 1.5,
+    
     description:
           "A classic and comforting West African meal featuring fluffy, steamed white rice served alongside a rich tomato-based stew. Made with a blend of fresh peppers, tomatoes, onions, and seasoned to perfection—often paired with meats like chicken, beef, or fish. Simple, flavorful, and satisfying.",
 
@@ -116,12 +117,13 @@ export const OrderList = [
     id: 9,
     Image: img9,
     title: "iced coffee",
+    price: 3.50,
       shortDescription: "Refreshing cold coffee with milk",
 
     description:
       "Chilled, freshly brewed coffee served over ice, lightly sweetened with a splash of milk or cream.",
 
-    price: 3.50,
+    
     button: "Add to cart",
   },
   {
@@ -130,10 +132,11 @@ export const OrderList = [
       shortDescription: "Refreshing purified water",
 
     title: "table water",
+        price: 1.50,
+
     description:
       "Refreshing purified drinking water, perfect for any meal. Clean, crisp taste with added minerals for balance.",
 
-    price: 1.50,
 
     button: "Add to cart",
   },
@@ -141,17 +144,19 @@ export const OrderList = [
     id: 11,
     Image: img11,
     title: "French fries",
+     price: 2.99,
   shortDescription: "Crispy golden fries",
 
     description:
       "Golden, crispy French fries made from premium potatoes. Lightly salted and fried to perfection for a crunchy outside and fluffy inside. A classic favorite for any meal or snack.",
 
-    price: 2.99,
+   
   },
   {
     id: 12,
     Image: img12,
     title: "SandWich",
+     price: 4.39,
         shortDescription: "Toasted sandwich packed with flavor",
 
 
@@ -159,6 +164,6 @@ export const OrderList = [
           "Freshly made sandwich layered with crisp vegetables, savory meats, and creamy spreads, all nestled between slices of soft, toasted bread. Perfect for a hearty lunch or quick bite.",
 
 
-    price: 4.39,
+   
   },
 ];
