@@ -39,12 +39,12 @@ const Order = () => {
             <div className="p-4 text-center">
               <h3 className="text-xl font-semibold">{order.title}</h3>
               <p className="text-lg text-gray-600">{order.price}</p>
-              <p className="text-sm text-gray-700">{order.shortDescription}</p>
+              <p className="text-sm text-gray-700">{order.shortDescriptionpm }</p>
               </div>
               </Link>
               <div>
               {/* <button className="flex items-center justify-center px-4 py-2 mt-4 text-white bg-red-500 rounded hover:bg-red-600" onClick={()=>handleAddToCart(order)}>
-                Add to cart
+              pm   Add to cart
                 <FaShoppingCart size={24} className="ml-2" />
               </button> */}
             </div>
