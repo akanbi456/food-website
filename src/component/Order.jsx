@@ -39,7 +39,7 @@ const Order = () => {
             <div className="p-4 text-center">
               <h3 className="text-xl font-semibold">{order.title}</h3>
               <p className="text-lg text-gray-600">{order.price}</p>
-              <p className="text-sm text-gray-700">{order.shortDescriptionpm }</p>
+              <p className="text-sm text-gray-700">{order.shortDescription}</p>
               </div>
               </Link>
               <div>
