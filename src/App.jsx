@@ -10,6 +10,7 @@ import Order from './component/Order'
 import Contact from "./pages/Contact";
 import OrderDetail from "./component/OrderDetail";
 import PaymentPage from "./component/Payment";
+import Section from "./component/Section";
 function App() {
   return (
     <>
@@ -25,6 +26,7 @@ function App() {
            <Route path="/order/:each" element={<OrderDetail />} />
            <Route path="/single/:each" element={<OrderDetail />} />
            <Route path="/payment" element={<PaymentPage />} />
+           <Route path="/section" element={<Section />} />
 
         </Routes>
       </Router>
