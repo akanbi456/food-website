@@ -95,7 +95,7 @@ const OrderDetail = () => {
       {notification && (
         <div
           className={`fixed top-4 right-4 z-50 flex items-center gap-2 px-4 py-2 text-white rounded shadow-lg transition-all duration-300 ${
-            notification.type === 'success' ? 'bg-green-600' : 'bg-red-600'
+            notification.type === 'success' ? 'bg-red-600' : 'bg-red-600'
           }`}
         >
           {notification.type === 'success' ? (
