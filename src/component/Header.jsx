@@ -14,10 +14,8 @@ const Header = () => {
           Elevate Your Inner Foodie with Every Bite
         </h1>
         <p className="text-lg text-gray-700 md:text-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos illo
-          voluptate dolores molestiae eveniet corrupti? Itaque perspiciatis
-          laborum incidunt recusandae nam maxime exercitationem, molestiae,
-          dicta asperiores officia quas ipsa voluptatibus!
+                    Discover a world of rich flavors and handcrafted meals, made with love from the freshest ingredients. Whether you're craving comfort food or something bold and exciting, we serve dishes that satisfy every craving and leave you coming back for more.
+
         </p>
         <Link to='/order'>
          <button className="mt-6 px-6 py-3 bg-red-500 text-white rounded-[50px] text-base md:text-lg hover:bg-red-600 transition duration-300">
