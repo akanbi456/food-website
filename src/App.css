@@ -1,10 +1,4 @@
-/* .sidebar{
-  height: 75vh;
-  width: 200px;
-  background-color: aqua;
-  
-} */
- 
+
 @keyframes slideInLeft {
   0% {
     opacity: 0;
@@ -33,4 +27,18 @@
 
 .animate-slide-in-right {
   animation: slideInRight 0.8s ease-out forwards;
+}
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.pop-in {
+  animation: popIn 0.6s ease-out forwards;
 }
