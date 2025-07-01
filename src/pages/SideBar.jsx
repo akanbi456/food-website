@@ -180,7 +180,7 @@ const SideBar = () => {
                   <span>{item.quantity}</span>
                   <button
                     onClick={() => increaseQuantity(item.id)}
-                    className="px-2 py-1 text-white bg-red-500 rounded hover:bg-red-600"
+                    className="px-2 py-1 text-white bg-green-500 rounded hover:bg-green-600"
                   >
                     +
                   </button>
