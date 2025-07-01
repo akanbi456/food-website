@@ -55,11 +55,13 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { OrderList } from '../data/OrderList';
 import { useCart } from '../content/CartContext';
-import { FaShoppingCart, FaTimes } from 'react-icons/fa';
+import { FaShoppingCart, FaTimes, FaCheckCircle, FaInfoCircle } from 'react-icons/fa';
 
 const OrderDetail = () => {
   const [data, setData] = useState({});
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // sidebar toggle
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [notification, setNotification] = useState(null); // ✅ notification state
+
   const { each } = useParams();
   const { cartItems, addToCart, increaseQuantity, decreaseQuantity } = useCart();
   const navigate = useNavigate();
@@ -72,14 +74,40 @@ const OrderDetail = () => {
   }, [each]);
 
   const handleAddToCart = () => {
-    if (data && data.id) {
+    const alreadyInCart = cartItems.some((item) => item.id === data.id);
+    if (alreadyInCart) {
+      showNotification('Item is already in the cart.', 'info');
+    } else {
       addToCart(data);
+      showNotification('Item added to cart!', 'success');
     }
+  };
+
+  // ✅ Show notification for 3 seconds
+  const showNotification = (message, type) => {
+    setNotification({ message, type });
+    setTimeout(() => setNotification(null), 3000);
   };
 
   return (
     <div className="relative">
-      {/* Main Order Detail Content */}
+      {/* ✅ Notification */}
+      {notification && (
+        <div
+          className={`fixed top-4 right-4 z-50 flex items-center gap-2 px-4 py-2 text-white rounded shadow-lg transition-all duration-300 ${
+            notification.type === 'success' ? 'bg-green-600' : 'bg-blue-600'
+          }`}
+        >
+          {notification.type === 'success' ? (
+            <FaCheckCircle size={20} />
+          ) : (
+            <FaInfoCircle size={20} />
+          )}
+          <span>{notification.message}</span>
+        </div>
+      )}
+
+      {/* Main Content */}
       <div className="max-w-3xl p-6 mx-auto mt-4 bg-white rounded shadow">
         {data.Image && (
           <img
@@ -100,7 +128,7 @@ const OrderDetail = () => {
         </button>
       </div>
 
-      {/* Toggle Button (Mobile only) */}
+      {/* Mobile Toggle Button */}
       <button
         onClick={() => setIsSidebarOpen(true)}
         className="fixed z-50 p-3 text-white bg-blue-600 rounded-full bottom-4 right-4 md:hidden"
@@ -114,7 +142,6 @@ const OrderDetail = () => {
           isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
         } md:translate-x-0`}
       >
-        {/* Header with Close Button */}
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-xl font-bold">Cart</h2>
           <button
