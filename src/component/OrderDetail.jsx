@@ -95,7 +95,7 @@ const OrderDetail = () => {
       {notification && (
         <div
           className={`fixed top-4 right-4 z-50 flex items-center gap-2 px-4 py-2 text-white rounded shadow-lg transition-all duration-300 ${
-            notification.type === 'success' ? 'bg-green-600' : 'bg-blue-600'
+            notification.type === 'success' ? 'bg-red-600' : 'bg-red-600'
           }`}
         >
           {notification.type === 'success' ? (
@@ -131,7 +131,7 @@ const OrderDetail = () => {
       {/* Mobile Toggle Button */}
       <button
         onClick={() => setIsSidebarOpen(true)}
-        className="fixed z-50 p-3 text-white bg-blue-600 rounded-full bottom-4 right-4 md:hidden"
+        className="fixed z-50 p-3 text-white bg-red-600 rounded-full bottom-4 right-4 md:hidden"
       >
         <FaShoppingCart size={20} />
       </button>
@@ -177,7 +177,7 @@ const OrderDetail = () => {
                   <span>{item.quantity}</span>
                   <button
                     onClick={() => increaseQuantity(item.id)}
-                    className="px-2 py-1 text-white bg-green-500 rounded hover:bg-green-600"
+                    className="px-2 py-1 text-white bg-red-500 rounded hover:bg-red-600"
                   >
                     +
                   </button>
