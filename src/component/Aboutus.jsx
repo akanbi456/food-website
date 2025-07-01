@@ -49,10 +49,10 @@ const Aboutus = () => {
           <div>
             <h2 className="mb-2 text-2xl font-semibold text-red-500">🌟 What Our Customers Say</h2>
             <p className="italic text-gray-600">
-              “FreshBites saved me from fast food. I get healthy meals delivered every week, and they actually taste homemade!” — <span className="not-italic font-semibold text-gray-800">Amaka O.</span>
+              “FreshBites saved me from fast food. I get healthy meals delivered every week, and they actually taste homemade!
             </p>
             <p className="mt-2 italic text-gray-600">
-              “As a busy developer, I don’t have time to cook. FreshBites gives me back my time without sacrificing quality.” — <span className="not-italic font-semibold text-gray-800">Joshua D.</span>
+              “As a busy developer, I don’t have time to cook. FreshBites gives me back my time without sacrificing quality.
             </p>
           </div>
 
