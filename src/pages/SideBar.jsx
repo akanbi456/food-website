@@ -115,7 +115,6 @@
 // };
 
 // export default SideBar;
-
 import React, { useState } from 'react';
 import { useCart } from '../content/CartContext';
 import { useNavigate } from 'react-router-dom';
