@@ -38,3 +38,47 @@
   opacity: 1;
   transform: scale(1) translateY(0);
 }
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-section.fade-slide-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* About.css */
+
+.about-img {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 0.8s ease-in-out;
+}
+
+.about-text {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 0.8s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
