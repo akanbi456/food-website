@@ -64,10 +64,10 @@ const Footer = () => {
         <div>
           <h4 className="mb-4 font-semibold text-red-500">Social</h4>
           <ul className="flex flex-row items-center justify-between text-sm cursor-pointer fle space-y-s2">
-            <FaInstagram size={24}/>
-            <FaFacebook size={24}/>
-            <FaTwitter size={24}/>
-            <FaTiktok size={24}/>
+           <a href=""><FaInstagram size={24}/></a> 
+            <a href=""><FaFacebook size={24}/></a>
+            <a href=""><FaTwitter size={24}/></a>
+           <a href=""> <FaTiktok size={24}/></a>
           </ul>
         </div>
       </div>
