@@ -11,8 +11,8 @@ const Contact = () => {
     <div className="max-w-6xl px-4 py-12 mx-auto text-gray-800">
       <h1 className="mb-4 text-4xl font-bold text-center">Contact Us</h1>
       <p className="mb-12 text-lg text-center">
-        We'd love to hear from you! Whether it's feedback, catering, or just to say hi 🍕
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, tenetur fugit a illo explicabo quaerat necessitatibus quam dicta repellendus voluptatum voluptates quia ipsam eos. Est quam hic quo adipisci fugit!
+          We'd love to hear from you! Whether you have feedback, want to inquire about our services, or just want to say hi — we're all ears. Our team is here to help, and we can’t wait to connect with you! 👋
+
       </p>
 
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
@@ -54,14 +54,7 @@ const Contact = () => {
             <p>📞 <strong>+234 8141584744</strong></p>
             <p>📧 <strong>contact@ <em>Foodieweb</em>.com</strong></p>
           </div>
-          {/* <div className="mt-4">
-            <iframe
-              title="map"
-              src="https://maps.google.com/maps?q=Flavor%20Town&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              className="w-full border rounded-md h-60"
-              allowFullScreen
-            ></iframe>
-          </div> */}
+         
         </div>
       </div>
       </div>

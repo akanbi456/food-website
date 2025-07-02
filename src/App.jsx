@@ -27,6 +27,7 @@ function App() {
            <Route path="/single/:each" element={<OrderDetail />} />
            <Route path="/payment" element={<PaymentPage />} />
            <Route path="/section" element={<Section />} />
+           
 
         </Routes>
       </Router>
