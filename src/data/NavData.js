@@ -4,6 +4,10 @@ export const NavData =[
     name: 'Home',
     Link: '/',
   },
+    {
+    name: 'About',
+    Link: '/about-us',
+  },
   {
     name: 'Menu',
     Link: '/menu',
@@ -12,10 +16,7 @@ export const NavData =[
   //   name: 'Dishes',
   //   Link: '/dishes',
   // },
-  {
-    name: 'About',
-    Link: '/about-us',
-  },
+
   {
     name:'Contact',
     Link:'/contact'
