@@ -74,6 +74,7 @@ const Footer = () => {
 
       <div className="mt-10 text-sm text-center text-white-400">
         © {new Date().getFullYear()} Your Food Brand. All rights reserved.
+        
       </div>
     </footer>
   );
