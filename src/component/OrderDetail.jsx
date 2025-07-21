@@ -56,6 +56,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { OrderList } from '../data/OrderList';
 import { useCart } from '../content/CartContext';
 import { FaShoppingCart, FaTimes, FaCheckCircle, FaInfoCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const OrderDetail = () => {
   const [data, setData] = useState({});
@@ -109,6 +110,12 @@ const OrderDetail = () => {
 
       {/* Main Content */}
       <div className="max-w-3xl p-6 mx-auto mt-4 bg-white rounded shadow">
+             <Link
+        to="/"
+        className="inline-block px-4 py-2 mb-6 text-sm font-medium text-white bg-orange-600 rounded hover:bg-orange-800"
+      >
+        ← Return to Home
+      </Link>
         {data.Image && (
           <img
             src={data.Image}

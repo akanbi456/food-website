@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 const Order = () => {
   const [cart, setCart] = useState([]);
 
@@ -20,6 +21,12 @@ const Order = () => {
 
   return (
     <div className="p-6 mx-auto max-w-7xl">
+           <Link
+        to="/"
+        className="inline-block px-4 py-2 mb-6 text-sm font-medium text-white bg-orange-600 rounded hover:bg-orange-800"
+      >
+        ← Return to Home
+      </Link>
       <h1 className="mb-6 text-3xl font-bold text-center">Food Order</h1>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
